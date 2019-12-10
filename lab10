@@ -1,0 +1,15 @@
+#! /usr/bin/python3
+
+import sys
+
+total = 0
+counter = 1
+input_count = len(sys.argv) - 1
+print(input_count,"numeric items have been entered")
+
+while counter < input_count + 1:
+    num = float(sys.argv[counter])
+    total = num + total
+    counter = counter + 1
+print(total, "is the total of all the inputs")
+print(total / input_count,"is the average of the given inputs")
